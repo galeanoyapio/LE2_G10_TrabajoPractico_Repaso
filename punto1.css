@@ -1,0 +1,99 @@
+body { 
+    font-family: 'Cambria', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 0px auto;
+    text-align: justify;
+  }
+
+  h1 {
+    color:#000000
+  }
+  
+.tituloInicial{
+    color:black;
+    text-align:center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 50px;
+    border-radius: 40px;
+}
+.titulo1{
+    .tituloInicial{
+        color:black;
+        text-align:center;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 100px;
+        border-radius: 40px;
+    }
+}
+/* Transiciones */
+  
+  .img1 {
+    color: #fff;
+    border: none;
+    padding: 10px 630px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .img1:hover {
+    background-color: #33333300;
+    transform: scale(1.1);
+  }
+  .img2 {
+    color: #fff;
+    border: none;
+    padding: 10px 640px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .img2:hover {
+    background-color: #33333300;
+    transform: scale(1.1);
+  }
+  .img3 {
+    color: #fff;
+    border: none;
+    padding: 10px 640px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .img3:hover {
+    background-color: #33333300;
+    transform: scale(1.1);
+  }
+  .img4 {
+    color: #fff;
+    border: none;
+    padding: 10px 640px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .img4:hover {
+    background-color: #33333300;
+    transform: scale(1.1);
+  }
+  .img5 {
+    color: #fff;
+    border: none;
+    padding: 10px 640px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .img5:hover {
+    background-color: #33333300;
+    transform: scale(1.1);
+  }
