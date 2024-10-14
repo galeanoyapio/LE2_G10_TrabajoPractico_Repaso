@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encender LEDs</title>
+    <link rel="stylesheet" href="punto5.css">
+</head>
+
+<body>
+    <h1>Control de LEDs</h1>
+        <button onclick="encenderLED('rojo')">Encender LED Rojo</button>
+        <button onclick="encenderLED('verde')">Encender LED Verde</button>
+        <button onclick="encenderLED('azul')">Encender LED Azul</button>
+
+    <script>
+        function encenderLED(color) { /*color remplaza a la variable que este en encenderLED('x') en los anteriores*/
+            console.log("LED: " + color);
+        }
+    </script>
+</body>
+</html>

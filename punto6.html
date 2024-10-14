@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo LED</title>
+    <link rel="stylesheet" href="punto6.css">
+</head>
+<body>
+    <h1>Brillo del LED</h1>
+
+        <div id="led" class="led"></div>
+        <input type="range" id="deslizador" min="0" max="255" value="0" oninput="cambiarBrillo()"> <!--range es un deslizador
+                                                                                                       cambiar brillo la funcion-->
+
+        <p>Brillo actual: <span id="brillovalor">0</span></p> <!--segun lo que lei, trata de un elemento que guarda mas elementos
+                                                                  donde resulta util para, en este caso, que brillovalor sea un valor
+                                                                  relacionado a brillo, es decir, a que tanta opacidad tenga el led y
+                                                                  cambiar al igualar con brillo en el script -->
+
+    <script>
+        function cambiarBrillo() {
+            var valor = document.getElementById("deslizador"); 
+            var brillo = deslizador.value; //lineas de codigo para almacenar los valores en la funcion
+            var led = document.getElementById("led"); 
+            led.style.opacity = brillo / 256; //portentaje de brillo tomando como totalmente encendido 256 (100%)
+            document.getElementById("brillovalor").innerText = brillo; //cambia el valor de brillovalor segun cual sea brillo pues
+                                                                       //se iguala el valor para que cambie dinamicamente
+        }
+    </script>
+</body>
+</html>

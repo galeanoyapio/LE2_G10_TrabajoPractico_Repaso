@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="punto3.css">
+</head>
+
+<body>
+    <div class="total">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="tareas" placeholder="Agregar tarea">
+        <button onclick="masTarea()">Añadir</button>
+        <ul id="listado"></ul>
+    </div>
+    <script>
+        function masTarea() {
+            const taskIn = document.getElementById('tareas');
+            const taskLista = document.getElementById('listado'); 
+
+            if (taskIn.value.trim() !== '') {
+                var li = document.createElement('li');
+                li.textContent = taskIn.value;
+                li.onclick = function() {
+                    this.classList.toggle('completed');
+             };
+             taskLista.appendChild(li);
+            taskIn.value = '';
+    }
+}
+
+    </script>
+</body>
+</html>
